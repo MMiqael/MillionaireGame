@@ -3,4 +3,196 @@
    uuid = "FC4EA1FE-FF83-40B3-BDDF-510D5931C209"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D12A0F05-937F-4FD0-8EC9-83810BEB8DCC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/Model/GameSession.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "GameSession"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85E3F768-C91A-4322-9689-A8BB5E4DAA0A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/View/AddQuestionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "addQuestionAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACD0FFBC-3C07-482A-B70A-6EB850FFD7E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/Model/Game.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "addQuestion(question:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9DBA484-D17A-4822-BCC0-FD149089DEE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/Model/Game.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "customQuestions"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C9DBA484-D17A-4822-BCC0-FD149089DEE9 - 81ce368abefddf3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Who_Wants_to_Be_a_Millionaire_.Game.customQuestions.getter : Swift.Array&lt;Who_Wants_to_Be_a_Millionaire_.QuestionsStruct&gt;"
+                  moduleName = "Who Wants to Be a Millionaire?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miqaelmartirosyan/Documents/MillionaireGame/Who%20Wants%20to%20Be%20a%20Millionaire%3F/Model/Game.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "105">
+               </Location>
+               <Location
+                  uuid = "C9DBA484-D17A-4822-BCC0-FD149089DEE9 - e4fa44c0841ab32f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Who_Wants_to_Be_a_Millionaire_.Game.customQuestions.setter : Swift.Array&lt;Who_Wants_to_Be_a_Millionaire_.QuestionsStruct&gt;"
+                  moduleName = "Who Wants to Be a Millionaire?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miqaelmartirosyan/Documents/MillionaireGame/Who%20Wants%20to%20Be%20a%20Millionaire%3F/Model/Game.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "142">
+               </Location>
+               <Location
+                  uuid = "C9DBA484-D17A-4822-BCC0-FD149089DEE9 - c9714b837481603d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Who_Wants_to_Be_a_Millionaire_.Game.customQuestions.modify : Swift.Array&lt;Who_Wants_to_Be_a_Millionaire_.QuestionsStruct&gt;"
+                  moduleName = "Who Wants to Be a Millionaire?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miqaelmartirosyan/Documents/MillionaireGame/Who%20Wants%20to%20Be%20a%20Millionaire%3F/Model/Game.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "C9DBA484-D17A-4822-BCC0-FD149089DEE9 - 512c64fd85724c11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Who_Wants_to_Be_a_Millionaire_.Game.customQuestions.modify : Swift.Array&lt;Who_Wants_to_Be_a_Millionaire_.QuestionsStruct&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Who Wants to Be a Millionaire?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miqaelmartirosyan/Documents/MillionaireGame/Who%20Wants%20to%20Be%20a%20Millionaire%3F/Model/Game.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8DA5906-AD18-4161-AF89-DA46F32B8CE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/Caretakers/CustomQuestionsCaretaker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "saveQuestion(question:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32103869-2891-4DC4-86DD-5AA6C7539D4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/Controller/AddQuestionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "addQuestionAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6AFEC54F-4630-4490-94E4-C45ED1BE41DA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/Controller/AddQuestionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "addQuestionAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F669E4BA-F803-455C-B1A3-0F633F6D6EF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Who Wants to Be a Millionaire?/Controller/AddQuestionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "addQuestionAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

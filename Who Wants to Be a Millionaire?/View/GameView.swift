@@ -8,7 +8,7 @@
 import UIKit
 
 protocol GameViewDelegate: class {
-    func getNewQuestion(index: Int)
+    func getNewQuestion()
     func gameOver()
 }
 
@@ -18,10 +18,9 @@ class GameView: UIView {
     
     var correctAnswer: String?
     
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var answersCollection: [UIButton]!
-    
-    var currentQuestionIndex: Int?
     
     override func awakeFromNib() {
         questionLabel.backgroundColor = .systemIndigo
@@ -35,27 +34,32 @@ class GameView: UIView {
         
         sender.backgroundColor = .systemYellow
         
+        // MARK: Разобраться с таймерами
         if title == correctAnswer {
             _ = Timer.scheduledTimer(withTimeInterval: 2,
                                      repeats: false) { _ in
                 sender.backgroundColor = .systemGreen
-                guard let index = self.currentQuestionIndex else { return }
-                self.gameViewDelegate?.getNewQuestion(index: index)
+                Game.shared.gameSession?.correctAnswersCount += 1
+                self.gameViewDelegate?.getNewQuestion()
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     self.setupConfig()
                 }
             }
         } else {
+            
             for button in answersCollection {
                 _ = Timer.scheduledTimer(withTimeInterval: 2,
                                          repeats: false) { _ in
                     guard let buttonTitle = button.titleLabel?.text else { return }
+                    
                     if buttonTitle == self.correctAnswer {
                         DispatchQueue.main.async {
-                            self.questionLabel.text = "Вы проиграли"
+                            self.questionLabel.text = "Вы проиграли ☹️"
                             button.backgroundColor = .systemGreen
                         }
                     }
+                    
                     self.gameViewDelegate?.gameOver()
                 }
             }

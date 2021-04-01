@@ -12,23 +12,50 @@ final class Game {
     static let shared = Game()
     
     var gameSession: GameSession?
-    let caretaker = Caretaker()
+    let resultsCaretaker = ResultsCaretaker()
+    let settingsConfigCaretaker = SettingsConfigCaretaker()
+    let customQuestionsCaretaker = CustomQuestionsCaretaker()
+    
+    private(set) var chosenMode: Int = 0 {
+        didSet {
+            settingsConfigCaretaker.saveConfig(with: chosenMode)
+        }
+    }
     
     private(set) var gameResult: [ResultStruct] = [] {
         didSet {
-            caretaker.saveResult(results: gameResult)
+            resultsCaretaker.saveResult(results: gameResult)
+        }
+    }
+    
+    private(set) var customQuestions: [QuestionsStruct] = [] {
+        didSet {
+            customQuestionsCaretaker.saveQuestion(question: customQuestions)
         }
     }
     
     private init() {
-        self.gameResult = caretaker.loadData()
+        gameResult = resultsCaretaker.loadData()
+        chosenMode = settingsConfigCaretaker.loadConfig()
+        customQuestions = customQuestionsCaretaker.loadQuestions()
+//        QuestionsStorage.shared.addQuestion(question: customQuestions)
     }
     
     func addResult() {
         guard let session = gameSession else { return }
-        let percent = (session.correctAnswersCount * 100) / QuestionStorage.questions.count
-        let result = ResultStruct(percent: percent)
+        let percent = (session.correctAnswersCount * 100) / session.questionsCount
+        let result = ResultStruct(percent: percent, questionsCount: session.questionsCount)
         gameResult.append(result)
         gameSession = nil
+    }
+    
+    func changeModeStatus(index: Int) {
+        if chosenMode != index {
+            chosenMode = index
+        }
+    }
+    
+    func addQuestion(question: QuestionsStruct) {
+        customQuestions.append(question)
     }
 }

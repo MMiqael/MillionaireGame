@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  Who Wants to Be a Millionaire?
 //
 //  Created by Микаэл Мартиросян on 20.03.2021.
@@ -10,43 +10,65 @@ import UIKit
 class GameViewController: UIViewController {
         
     lazy var gameView = self.view as! GameView
-        
-    private var questionsList = QuestionStorage.questions
-        
+                        
+    private var selectedMode: GameMode {
+        GameMode(rawValue: Game.shared.chosenMode) ?? .sequentially
+    }
+            
     override func viewDidLoad() {
         super.viewDidLoad()
         
         gameView.gameViewDelegate = self
         startGame()
+        
+        guard let session = Game.shared.gameSession else { return }
+        
+        session.currentQuestionIndex.addObserver(self) { [weak self] score, _ in
+            guard let declension = self?.determineDeclension(score: score) else { return }
+            self?.gameView.scoreLabel.text = "Вы ответили на \(score) \(declension) из \(session.questionsCount)"
+        }
     }
     
     private func startGame() {
-        guard let randomQ = questionsList.randomElement() else { return }
-        guard let buttons = gameView.answersCollection else { return }
-        
-        for index in randomQ.answers.indices {
-            buttons[index].setTitle(randomQ.answers[index], for: .normal)
+        switch selectedMode {
+        case .sequentially:
+            return SequentiallyModeStrategy().getNewQuestion(view: gameView)
+        case .randomly:
+            return RandomlyModeStrategy().getNewQuestion(view: gameView)
         }
-        
-        gameView.questionLabel.text = randomQ.question
-        gameView.correctAnswer = randomQ.correctAnswer
-        gameView.currentQuestionIndex = questionsList.firstIndex { $0.question == randomQ.question }
+    }
+    
+    private func determineDeclension(score: Int) -> String {
+        if (score % 10 == 1) && (score % 100 != 11) {
+            return "вопрос"
+        } else if (score % 10 >= 2) && (score % 10 <= 4) && ((score % 100 < 10) || (score % 100 > 20)) {
+            return "вопроса"
+        } else {
+            return "вопросов"
+        }
+    }
+    
+    deinit {
+        Game.shared.gameSession?.currentQuestionIndex.removeObserver(self)
     }
 }
 
 extension GameViewController: GameViewDelegate {
     
-    // MARK: Не смог разобраться, как передать очки делегатом/замыканием в GameSession
-    func getNewQuestion(index: Int) {
-        Game.shared.gameSession?.correctAnswersCount += 1
-        questionsList.remove(at: index)
-        if questionsList.count > 0 {
+    func getNewQuestion() {
+        
+        guard let gameSession = Game.shared.gameSession else { return }
+        
+        gameSession.currentQuestionIndex.value += 1
+        
+        // MARK: Разобраться с таймерами
+        if gameSession.currentQuestionIndex.value <= gameSession.questionsCount - 1 {
             _ = Timer.scheduledTimer(withTimeInterval: 2,
                                      repeats: false) { _ in
                 self.startGame()
             }
         } else {
-            gameView.questionLabel.text = "Вы ответили на вcе вопросы!\nПоздравляем!"
+            gameView.questionLabel.text = "Вы ответили на вcе вопросы!\nПоздравляем! 🎉"
             _ = Timer.scheduledTimer(withTimeInterval: 2,
                                      repeats: false) { _ in
                 self.gameOver()

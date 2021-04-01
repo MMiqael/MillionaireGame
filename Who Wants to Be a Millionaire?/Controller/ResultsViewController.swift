@@ -28,8 +28,8 @@ class ResultsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: resultsCell, for: indexPath)
-
-        cell.textLabel?.text = "\(results[indexPath.row].percent)% правильных ответов из \(QuestionStorage.questions.count) вопросов"
+        
+        cell.textLabel?.text = "\(results[indexPath.row].percent)% правильных ответов из \(results[indexPath.row].questionsCount) вопросов"
     
         return cell
     }

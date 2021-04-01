@@ -8,7 +8,6 @@
 import Foundation
 
 struct ResultStruct: Codable {
-//    var date: Date
     var percent: Int
-//    var questionsCount: Int
+    var questionsCount: Int
 }

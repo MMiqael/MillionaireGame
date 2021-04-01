@@ -1,5 +1,5 @@
 //
-//  Caretaker.swift
+//  ResultsCaretaker.swift
 //  Who Wants to Be a Millionaire?
 //
 //  Created by Микаэл Мартиросян on 29.03.2021.
@@ -9,7 +9,7 @@ import Foundation
 
 typealias Memento = Data
 
-final class Caretaker {
+final class ResultsCaretaker {
     
     private let decoder = JSONDecoder()
     private let encoder = JSONEncoder()

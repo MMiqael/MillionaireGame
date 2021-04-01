@@ -7,8 +7,19 @@
 
 import Foundation
 
-class GameSession {
-    
+final class GameSession {
+        
+    var questionsCount = 0
     var correctAnswersCount = 0
     
+    var currentQuestionIndex = Observable<Int>(0)
+    
+    var askedRandomQuestions: [QuestionsStruct] = []
+    
+    let defaultQuestionStorage = QuestionsStorage.shared.questions
+    let shuffledQuestionStorage = QuestionsStorage.shared.questions.shuffled()
+    
+    init(questionsCount: Int) {
+        self.questionsCount = questionsCount
+    }
 }

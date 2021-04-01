@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C25CF2D2613238E00999DC0 /* GameStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25CF2C2613238E00999DC0 /* GameStrategy.swift */; };
+		0C25CF332613254D00999DC0 /* SequentiallyModeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25CF322613254D00999DC0 /* SequentiallyModeStrategy.swift */; };
+		0C25CF372613286600999DC0 /* RandomlyModeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25CF362613286600999DC0 /* RandomlyModeStrategy.swift */; };
+		0C766FB0261200F900FA34A5 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C766FAF261200F900FA34A5 /* GameMode.swift */; };
+		0C766FB6261207E100FA34A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C766FB5261207E100FA34A5 /* SettingsViewController.swift */; };
+		0C766FB926120A2500FA34A5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C766FB826120A2500FA34A5 /* SettingsView.swift */; };
+		0C766FBC2612228300FA34A5 /* SettingsConfigCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C766FBB2612228300FA34A5 /* SettingsConfigCaretaker.swift */; };
 		0CAA3D42260F661F00758FFA /* ResultStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3D41260F661F00758FFA /* ResultStruct.swift */; };
 		0CAA3D48260F827100758FFA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3D47260F827100758FFA /* GameView.swift */; };
-		0CAA3D52261129E800758FFA /* Caretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3D51261129E800758FFA /* Caretaker.swift */; };
+		0CAA3D52261129E800758FFA /* ResultsCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3D51261129E800758FFA /* ResultsCaretaker.swift */; };
+		0CBD532F2613DD8D00AE5582 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD532E2613DD8D00AE5582 /* Observable.swift */; };
 		0CBD924A26067AFD00498182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD924926067AFD00498182 /* AppDelegate.swift */; };
 		0CBD924C26067AFD00498182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD924B26067AFD00498182 /* SceneDelegate.swift */; };
 		0CBD924E26067AFD00498182 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD924D26067AFD00498182 /* GameViewController.swift */; };
@@ -21,13 +29,24 @@
 		0CBD926B26068D2F00498182 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD926A26068D2F00498182 /* ResultsViewController.swift */; };
 		0CBD926E26069EAF00498182 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD926D26069EAF00498182 /* Game.swift */; };
 		0CBD927126069F6A00498182 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD927026069F6A00498182 /* GameSession.swift */; };
-		0CBD927C2607808400498182 /* QuestionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD927B2607808400498182 /* QuestionStorage.swift */; };
+		0CBD927C2607808400498182 /* QuestionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD927B2607808400498182 /* QuestionsStorage.swift */; };
+		0CED62892614AF0B00D30FCB /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED62882614AF0B00D30FCB /* AddQuestionViewController.swift */; };
+		0CED62952614DFE800D30FCB /* CustomQuestionsCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED62942614DFE800D30FCB /* CustomQuestionsCaretaker.swift */; };
+		0CED629A2614F44500D30FCB /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED62992614F44500D30FCB /* SegueIdentifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C25CF2C2613238E00999DC0 /* GameStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStrategy.swift; sourceTree = "<group>"; };
+		0C25CF322613254D00999DC0 /* SequentiallyModeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentiallyModeStrategy.swift; sourceTree = "<group>"; };
+		0C25CF362613286600999DC0 /* RandomlyModeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomlyModeStrategy.swift; sourceTree = "<group>"; };
+		0C766FAF261200F900FA34A5 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		0C766FB5261207E100FA34A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0C766FB826120A2500FA34A5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0C766FBB2612228300FA34A5 /* SettingsConfigCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigCaretaker.swift; sourceTree = "<group>"; };
 		0CAA3D41260F661F00758FFA /* ResultStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStruct.swift; sourceTree = "<group>"; };
 		0CAA3D47260F827100758FFA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		0CAA3D51261129E800758FFA /* Caretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caretaker.swift; sourceTree = "<group>"; };
+		0CAA3D51261129E800758FFA /* ResultsCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCaretaker.swift; sourceTree = "<group>"; };
+		0CBD532E2613DD8D00AE5582 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		0CBD924626067AFD00498182 /* Who Wants to Be a Millionaire?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who Wants to Be a Millionaire?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBD924926067AFD00498182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CBD924B26067AFD00498182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +60,10 @@
 		0CBD926A26068D2F00498182 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		0CBD926D26069EAF00498182 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0CBD927026069F6A00498182 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
-		0CBD927B2607808400498182 /* QuestionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStorage.swift; sourceTree = "<group>"; };
+		0CBD927B2607808400498182 /* QuestionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsStorage.swift; sourceTree = "<group>"; };
+		0CED62882614AF0B00D30FCB /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
+		0CED62942614DFE800D30FCB /* CustomQuestionsCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomQuestionsCaretaker.swift; sourceTree = "<group>"; };
+		0CED62992614F44500D30FCB /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +77,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C25CF2B2613236400999DC0 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				0C25CF2C2613238E00999DC0 /* GameStrategy.swift */,
+				0C25CF322613254D00999DC0 /* SequentiallyModeStrategy.swift */,
+				0C25CF362613286600999DC0 /* RandomlyModeStrategy.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		0C25CF30261324BF00999DC0 /* Caretakers */ = {
+			isa = PBXGroup;
+			children = (
+				0CAA3D51261129E800758FFA /* ResultsCaretaker.swift */,
+				0C766FBB2612228300FA34A5 /* SettingsConfigCaretaker.swift */,
+				0CED62942614DFE800D30FCB /* CustomQuestionsCaretaker.swift */,
+			);
+			path = Caretakers;
+			sourceTree = "<group>";
+		};
+		0C25CF31261324EF00999DC0 /* Enums & Structs */ = {
+			isa = PBXGroup;
+			children = (
+				0CED62AF26151CB300D30FCB /* Questions */,
+				0C766FAF261200F900FA34A5 /* GameMode.swift */,
+				0CAA3D41260F661F00758FFA /* ResultStruct.swift */,
+				0CBD532E2613DD8D00AE5582 /* Observable.swift */,
+				0CED62992614F44500D30FCB /* SegueIdentifiers.swift */,
+			);
+			path = "Enums & Structs";
+			sourceTree = "<group>";
+		};
 		0CBD923D26067AFD00498182 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +128,9 @@
 		0CBD924826067AFD00498182 /* Who Wants to Be a Millionaire? */ = {
 			isa = PBXGroup;
 			children = (
+				0C25CF31261324EF00999DC0 /* Enums & Structs */,
+				0C25CF2B2613236400999DC0 /* Strategy */,
+				0C25CF30261324BF00999DC0 /* Caretakers */,
 				0CBD925F2606886F00498182 /* Model */,
 				0CBD92762607462E00498182 /* View */,
 				0CBD926826068AE700498182 /* Controller */,
@@ -92,10 +149,6 @@
 			children = (
 				0CBD926D26069EAF00498182 /* Game.swift */,
 				0CBD927026069F6A00498182 /* GameSession.swift */,
-				0CAA3D41260F661F00758FFA /* ResultStruct.swift */,
-				0CBD927B2607808400498182 /* QuestionStorage.swift */,
-				0CBD92602606888800498182 /* QuestionsStruct.swift */,
-				0CAA3D51261129E800758FFA /* Caretaker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +159,8 @@
 				0CBD926526068ADF00498182 /* MainViewController.swift */,
 				0CBD924D26067AFD00498182 /* GameViewController.swift */,
 				0CBD926A26068D2F00498182 /* ResultsViewController.swift */,
+				0C766FB5261207E100FA34A5 /* SettingsViewController.swift */,
+				0CED62882614AF0B00D30FCB /* AddQuestionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,8 +169,18 @@
 			isa = PBXGroup;
 			children = (
 				0CAA3D47260F827100758FFA /* GameView.swift */,
+				0C766FB826120A2500FA34A5 /* SettingsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0CED62AF26151CB300D30FCB /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				0CBD927B2607808400498182 /* QuestionsStorage.swift */,
+				0CBD92602606888800498182 /* QuestionsStruct.swift */,
+			);
+			path = Questions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,18 +253,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CAA3D52261129E800758FFA /* Caretaker.swift in Sources */,
+				0CED629A2614F44500D30FCB /* SegueIdentifiers.swift in Sources */,
+				0C766FB926120A2500FA34A5 /* SettingsView.swift in Sources */,
+				0CBD532F2613DD8D00AE5582 /* Observable.swift in Sources */,
+				0CAA3D52261129E800758FFA /* ResultsCaretaker.swift in Sources */,
+				0C25CF372613286600999DC0 /* RandomlyModeStrategy.swift in Sources */,
 				0CAA3D42260F661F00758FFA /* ResultStruct.swift in Sources */,
+				0CED62892614AF0B00D30FCB /* AddQuestionViewController.swift in Sources */,
 				0CBD924E26067AFD00498182 /* GameViewController.swift in Sources */,
 				0CBD92612606888800498182 /* QuestionsStruct.swift in Sources */,
-				0CBD927C2607808400498182 /* QuestionStorage.swift in Sources */,
+				0CBD927C2607808400498182 /* QuestionsStorage.swift in Sources */,
+				0C766FBC2612228300FA34A5 /* SettingsConfigCaretaker.swift in Sources */,
 				0CBD927126069F6A00498182 /* GameSession.swift in Sources */,
 				0CAA3D48260F827100758FFA /* GameView.swift in Sources */,
 				0CBD926E26069EAF00498182 /* Game.swift in Sources */,
+				0CED62952614DFE800D30FCB /* CustomQuestionsCaretaker.swift in Sources */,
 				0CBD924A26067AFD00498182 /* AppDelegate.swift in Sources */,
+				0C766FB6261207E100FA34A5 /* SettingsViewController.swift in Sources */,
 				0CBD924C26067AFD00498182 /* SceneDelegate.swift in Sources */,
+				0C25CF332613254D00999DC0 /* SequentiallyModeStrategy.swift in Sources */,
 				0CBD926626068ADF00498182 /* MainViewController.swift in Sources */,
 				0CBD926B26068D2F00498182 /* ResultsViewController.swift in Sources */,
+				0C25CF2D2613238E00999DC0 /* GameStrategy.swift in Sources */,
+				0C766FB0261200F900FA34A5 /* GameMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miqaelmartirosyan.Who-Wants-to-Be-a-Millionaire-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -372,6 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miqaelmartirosyan.Who-Wants-to-Be-a-Millionaire-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
